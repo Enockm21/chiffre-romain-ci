@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-
+git pull
+npm  build
 npm test
 if [ $? -eq 0 ]; then
   echo "Tests passed"
+ 
   # Deploy the code to the production server
-  #//git push production development:master
+  git push develop:main
 else
-  
+
   current_date=$(date "+%F-%Hh-%Mm-%Ss")
   git branch "failures/$current_date"
   #git reset HEAD~1
