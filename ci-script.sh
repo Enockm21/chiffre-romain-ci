@@ -15,7 +15,8 @@ else
 
   current_date=$(date "+%F-%Hh-%Mm-%Ss")
   git branch "failures/$current_date"
+  git push --all -u
   git reset HEAD~1
   echo "Test failed"
- # exit 1
+  exit 1
 fi
