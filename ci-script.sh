@@ -17,6 +17,8 @@ else
   git branch "failures/$current_date"
   git push --all -u
   git reset HEAD~1
+  git restore .
+  git push -f
   echo "Test failed"
   exit 1
 fi
