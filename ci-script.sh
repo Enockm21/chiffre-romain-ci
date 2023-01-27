@@ -8,7 +8,6 @@ npm run build
 npm test
 if [ $? -eq 0 ]; then
 
-  git checkout main
   git rebase develop main
   echo "Tests passed"
 

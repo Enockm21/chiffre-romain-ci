@@ -21,7 +21,13 @@ describe("integration test", function() {
     it("should return 6", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(6), "VI");
     });
-    it("should return 6", function() {
-        assert.strictEqual(ConvertisserNombresRomains.convertir(7), "VI");
+    it("should return 7", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(7), "VII");
+    });
+    it("should return 8", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(8), "VIII");
+    });
+    it("should return 9", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(9), "IX");
     });
 });
