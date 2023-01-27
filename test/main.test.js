@@ -33,4 +33,7 @@ describe("integration test", function() {
     it("should return 10", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(10), "X");
     });
+    it("should return 11", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(11), "XI");
+    });
 });
