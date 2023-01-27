@@ -24,4 +24,7 @@ describe("integration test", function() {
     it("should return 6", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(7), "VI");
     });
+    it("should return 6", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(9), "VI");
+    });
 });
