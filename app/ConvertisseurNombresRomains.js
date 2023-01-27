@@ -1,4 +1,4 @@
-module.exports.convertir=(nombre)=>{
+const convertir=(nombre)=>{
     if (isNaN(nombre))
     return NaN;
 var digits = String(+nombre).split(""),
@@ -11,3 +11,4 @@ while (i--)
     roman = (key[+digits.pop() + (i * 10)] || "") + roman;
 return Array(+digits.join("") + 1).join("M") + roman;
 }
+module.exports= {convertir}
