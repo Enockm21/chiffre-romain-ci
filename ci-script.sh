@@ -9,7 +9,7 @@ npm test
 if [ $? -eq 0 ]; then
   echo "Tests passed"
   git checkout main
-  git rebase develop master
+  git rebase develop main
  
 else
 
