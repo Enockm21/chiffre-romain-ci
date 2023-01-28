@@ -36,4 +36,7 @@ describe("integration test", function() {
     it("should return 11", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(11), "XI");
     });
+    it("should return 12", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(12), "XI");
+    });
 });
