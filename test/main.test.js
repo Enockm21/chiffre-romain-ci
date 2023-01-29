@@ -2,7 +2,7 @@ var assert = require('assert');
 const ConvertisserNombresRomains = require("../app/ConvertisseurNombresRomains.js")
 
 
-describe("integration test", function() {
+describe("Unit test", function() {
     it("should return 1", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(1), "I");
     });
@@ -35,5 +35,32 @@ describe("integration test", function() {
     });
     it("should return 11", function() {
         assert.strictEqual(ConvertisserNombresRomains.convertir(11), "XI");
+    });
+    it("should return 12", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(12), "XII");
+    });
+    it("should return 13", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(13), "XIII");
+    });
+    it("should return 14", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(14), "XIV");
+    });
+    it("should return 15", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(15), "XV");
+    });
+    it("should return 16", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(16), "XVI");
+    });
+    it("should return 17", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(17), "XVII");
+    });
+    it("should return 18", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(18), "XVIII");
+    });
+    it("should return 19", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(19), "XIX");
+    });
+    it("should return 20", function() {
+        assert.strictEqual(ConvertisserNombresRomains.convertir(20), "XX");
     });
 });

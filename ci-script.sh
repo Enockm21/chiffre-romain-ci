@@ -27,7 +27,7 @@ else
   #suppression des modifications
   git restore .
 
-  #Mise à jour du repo 
+  #Mise à jour du repo en remote
   git push -f
   echo "Test failed"
   exit 1
